@@ -13,6 +13,9 @@ html{
 --title-text-color:#212121;
 --accent-color:#2196F3;
 --primary-white-color:#ffffff;
+--card-set-gap: 20px;
+--card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -277,7 +280,7 @@ padding-top: 200px;
 .t-head{
     display: flex;
    padding-left: 0px; 
-   padding-bottom: 50px;
+   padding-bottom: 94px;
 
    
 }
@@ -306,17 +309,39 @@ padding-top: 200px;
    letter-spacing: 0.03em;
  padding-top: 94px;
    margin-bottom: 50px;
+}
    
+.team-design{
+ 
+ 
+  box-shadow: var(--card-shadow);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.team-order{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-bottom: 94px;
+
+  display: flex;
+  flex-wrap: wrap;
+  
+  
 }
 
-
+.team-margin{
+    margin-right: 30px;
+}
 
 .team-person{
    font-weight: 500;
    font-size:16px;
    line-height:1.18;
-   
-   letter-spacing: 0.03em;
+      letter-spacing: 0.03em;
+      margin-top: 30px;
+      text-align: center;
 }
 
 
@@ -324,10 +349,12 @@ padding-top: 200px;
 .person-job{
    color: var(--primary-text-color);
    font-size: 16px;
-   line-height: 1.18;
-   
+   line-height: 1.18;  
    letter-spacing: 0.03em;
-
+   margin-top: 10px;
+   padding-bottom: 30px;
+   text-align: center;
+  
 }
 
 
@@ -390,6 +417,16 @@ padding-top: 200px;
 
 .logo-f{
 color: white;
+margin-bottom: 20px;
+}
+
+.logo-fs{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.logo-p{
+    padding-left: 0px;
 }
 
 .list{
@@ -408,6 +445,7 @@ color: white;
     /* or 171% */
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    margin-bottom: 9px;
 }
 
 .a-address{
@@ -418,8 +456,11 @@ color: white;
     /* or 171% */
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
 }
 
 .invisible{
     display: none;
 }
+
+
