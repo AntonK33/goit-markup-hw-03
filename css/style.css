@@ -1,3 +1,13 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+
 :root{
 --primary-text-color: #757575;
 --title-text-color:#212121;
@@ -6,10 +16,13 @@
 }
 
 
+       
+
+
 
 
 body{
-    
+    margin: 0px;
     color:var(--title-text-color);
     font-family: "Roboto", sans-serif;
     font-size: 14px;
@@ -17,7 +30,34 @@ body{
 }
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, 
+ul{
+  margin: 0;
+}
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Контейнер*/
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto; 
+ 
+}
 
 
 .logo{
@@ -28,33 +68,78 @@ body{
     text-decoration: none;
     letter-spacing: 0.03em;
     color: #2196F3;
+    margin-right: 0px;;
+    display:flex;
 }
  
 
 
 
-
 .logo-style{
     color: var(--title-text-color);
+    display: flex;
+}
+
+.logo-box{
+display: flex;
+
+}
+
+.main-nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
+.nav-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
 
+.a-flex{
+    display:flex;
+    align-items: center;
+    
+}
 
-
-
+.d-flex{
+    display: flex;
+}
+.d-flex:first-child{
+    margin-left: 0px;
+    padding-left: 0px;
+}
 
 .site-nav{
+    
     display: flex;
     font-weight: 500;
     line-height:1.14;
     text-decoration: none;
     letter-spacing: 0.02em;
     color:var(--title-text-color)
+    
+}
+.site-nav .list:last-child{
+    margin-right: 0px;
+    padding-right: 20px;
 }
 
+
+
 .site-nav .item{
+    display: block;
 margin-right: 50px;
+margin-top: 32px;
+margin-bottom: 32px;
+}
+
+.site-nav .item:last-child{
+    margin-right: 0px;
 }
 
 
@@ -73,14 +158,20 @@ margin-right: 50px;
 
 }
  
-.a-nav{
+.a-nav {
     color: #757575;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
+   
+    
 
 }
+
+
+
+
+
 
 
 
@@ -105,17 +196,24 @@ margin-right: 50px;
 }
 /*Герой*/
 
+.a-contact{
+    margin-right: 50px;
+}
+.a-contact:last-child{
+    margin-right: 0px;
+}
 
 
 .title-head{  
 font-weight: 900;
 font-size: 44px;
 line-height: 1,36;
-text-align: center;
+
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
-
+margin-bottom: 40px;
+padding-top: 200px;
 
 }
 
@@ -128,19 +226,28 @@ color: #FFFFFF;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    margin-bottom: 210px;
+  
+   
     
+}
+
+.dominant{
+    display: flex;
+    margin-bottom: 94px;
 }
 
 
 .text-head{
+    display: inline-block;
     font-weight: 700;
+    font-size: 14px;
     line-height:1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 
 
 }
@@ -149,8 +256,11 @@ color: #FFFFFF;
 
 .text-main{
    color:var(--primary-text-color);
+   font-size: 14px;
    line-height:1.7;
    letter-spacing: 0.03em;
+   width: 270px;
+   margin-right: 30px;
 
 }
 
@@ -161,6 +271,30 @@ color: #FFFFFF;
    line-height:1.16;
    text-align: center;
    letter-spacing: 0.03em;
+   margin-bottom: 50px;
+}
+
+.t-head{
+    display: flex;
+   padding-left: 0px; 
+   padding-bottom: 50px;
+
+   
+}
+
+
+
+
+.img-m{
+    margin-right: 30px;
+}
+.img-m:last-child{
+    margin-right: 0px;
+}
+
+.section-team{
+    background: #F5F4FA;
+
 }
 
 
@@ -170,6 +304,9 @@ color: #FFFFFF;
    line-height:1.16 ;
    text-align: center;
    letter-spacing: 0.03em;
+ padding-top: 94px;
+   margin-bottom: 50px;
+   
 }
 
 
@@ -178,7 +315,7 @@ color: #FFFFFF;
    font-weight: 500;
    font-size:16px;
    line-height:1.18;
-   text-align: center;
+   
    letter-spacing: 0.03em;
 }
 
@@ -188,7 +325,7 @@ color: #FFFFFF;
    color: var(--primary-text-color);
    font-size: 16px;
    line-height: 1.18;
-   text-align: center;
+   
    letter-spacing: 0.03em;
 
 }
@@ -235,8 +372,13 @@ color: #FFFFFF;
 
 
 .hero-size{
+    display: block;
    background: #2F303A;
-  
+   align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 94px;
+
 }
 
 
@@ -254,6 +396,7 @@ color: white;
     list-style: none;
     text-decoration: none;
     font-style: normal;
+   
 }
 
 
