@@ -56,9 +56,10 @@ img {
 }
 
 .heder-style{
-    border-bottom: 1px;
+    border-bottom: 1px solid;
     height: 80px;
     display: flex;
+     border-color:  #ECECEC;
 }
 
 /*Контейнер*/
