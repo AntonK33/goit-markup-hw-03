@@ -56,10 +56,12 @@ img {
 }
 
 .heder-style{
-    border-bottom: 1px solid;
+
+    border: 1px solid;
     height: 80px;
     display: flex;
-     border-color:  #ECECEC;
+    border-color:  #ECECEC;
+    align-items: center;
 }
 
 /*Контейнер*/
@@ -175,7 +177,6 @@ display: flex;
 }
 .address-flex{
     display:flex;
-    align-items: center;
    margin-left: auto;
 } 
 .nav-contact{
@@ -241,17 +242,7 @@ color: #FFFFFF;
 margin-bottom: 40px;
 text-align: center;}
 
-.title-head{  
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: #FFFFFF;
-margin-bottom: 40px;
-text-align: center;
 
-}
 .title-maid{
    font-weight: 700;
    font-size:36px;
@@ -447,7 +438,7 @@ color: white;
 
 
 
-}
+
 
 .list{
     list-style: none;
@@ -484,8 +475,12 @@ color: white;
 }
 
 
-.invisible{
- visibility: hidden;
+.visually-hidden{
+  position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;   
+    height: 1px;
+    margin: -1px;
 }
 
 
